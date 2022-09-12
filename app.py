@@ -16,13 +16,18 @@ with it's contents (Blueprint).
 '''
 
 # Import Package / Modules
-from flask import Flask
+from flask import Flask, render_template
 from general.general import General
 
 app = Flask(__name__)
 
 # Register Blueprint
 app.register_blueprint(General)
+
+@app.route('/')
+@General.route('/')
+def index():
+        return render_template("general/starter.html")
 
 
 # Run the application
