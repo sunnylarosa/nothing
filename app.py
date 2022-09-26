@@ -24,12 +24,6 @@ app = Flask(__name__)
 # Register Blueprint
 app.register_blueprint(General)
 
-@app.route('/')
-@General.route('/')
-def index():
-        return render_template("general/starter.html")
-
-
 # Run the application
 if (__name__) == "__main__":
     app.run()

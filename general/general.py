@@ -5,10 +5,11 @@ page such as home/index, login, logout, sign up, etc.
 '''
 from flask import Blueprint, render_template
 
-General = Blueprint("General", __name__, static_folder="static", template_folder="templates", url_prefix="/general")
+General = Blueprint("General", __name__, static_folder="static", template_folder="templates", url_prefix="/")
 
 @General.route("/")
 def index():
+    # return "<h1>Hello</h1>"
     return render_template("general/starter.html")
 
 @General.route("/about")
