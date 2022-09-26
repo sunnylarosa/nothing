@@ -7,10 +7,10 @@ from flask import Blueprint, render_template
 
 General = Blueprint("General", __name__, template_folder="templates", url_prefix="/")
 
-@General.route("/")
-def index():
-    # return "<h1>Hello</h1>"
-    return render_template("starter.html")
+# @General.route("/")
+# def index():
+#     # return "<h1>Hello</h1>"
+#     return render_template("starter.html")
 
 @General.route("/about")
 def about():
