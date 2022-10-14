@@ -90,32 +90,60 @@ microblog
 |-- tests.py
 
 
-nothing/
+
+nothing
 |-- app/
-|   |-- __pycache__
-|   |
-|   |-- general/
-|   |   |-- pycache__
+|   |-- auth/
 |   |   |-- static/
 |   |   |-- templates/
-|   |   |   |-- general/
-|   |   |   |   
-|   |   |
+|   |   |   |-- login.html
+|   |   |   |-- register.html
 |   |   |
 |   |   |-- __init__.py
-|   |   |-- general.py
+|   |   |-- routes.py
 |   |
 |   |-- static/
-|   |   |-- dist/
-|   |   |-- plugins/
-|   |   
+|   |   |-- logo.png
+|   |
 |   |-- templates/
 |   |   |-- base.html
-|   |   |-- starter.html
-|   |  
+|   |   |-- index.html
+|   |
 |   |-- venv/
-|   |-- .gitignore
-|   |-- app.py
 |   
+| 
+|   
+|-- .gitignore
 |-- README.txt
+|-- saski.py (run file)
 |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
