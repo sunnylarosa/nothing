@@ -4,9 +4,16 @@ and declare our app variable. Also tells Python Interpreter that
 this (/app) is a package.
 '''
 from flask import Flask
+import config
 
-def create_app(config_filename=None):
+def create_app(config_filename=config):
     app = Flask(__name__)
+
+    if app.config["ENV"] == "production":
+        app.config.from_object(config_filename.ProductionConfig)
+        
+    elif app.config["ENV"] == "development":
+        app.config.from_object(config_filename.DevelopmentConfig)
 
     # Import "main" as the "main_bp" then register the blueprint
     from app.main import main as main_bp
