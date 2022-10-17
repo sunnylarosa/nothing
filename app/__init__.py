@@ -8,11 +8,11 @@ from flask import Flask
 def create_app(config_filename=None):
     app = Flask(__name__)
 
-    # Import then register 'main' blueprint
+    # Import "main" as the "main_bp" then register the blueprint
     from app.main import main as main_bp
     app.register_blueprint(main_bp)
 
-    # Import then register 'auth' blueprint
+    # Import "auth" as the "auth_bp" then register the blueprint
     from app.auth import auth as auth_bp
     app.register_blueprint(auth_bp)
 

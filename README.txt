@@ -95,28 +95,39 @@ nothing
 |-- app/
 |   |-- auth/
 |   |   |-- static/
-|   |   |-- templates/
-|   |   |   |-- login.html
-|   |   |   |-- register.html
-|   |   |
+|   |   |   |-- script.js
+|   |   |   
 |   |   |-- __init__.py
 |   |   |-- routes.py
 |   |
+|   |-- main/
+|   |   |-- __init__.py
+|   |   |-- routes.py
+|   |   
 |   |-- static/
-|   |   |-- logo.png
+|   |   |-- dist/
+|   |   |-- plugins/
+|   |   |-- public/
+|   |   |   |-- img/
+|   |   |   |   |-- kalbe.jpg
+|   |   |   |   |-- kalbe2.jpg
 |   |
 |   |-- templates/
+|   |   |-- auth/
+|   |   |   |-- login.html
+|   |   |   |-- register.html
+|   |   |
+|   |   |-- main/
+|   |   |   |-- welcome.html
+|   |   |   
 |   |   |-- base.html
 |   |   |-- index.html
-|   |
-|   |-- venv/
 |   
-| 
-|   
+|-- venv/  
 |-- .gitignore
 |-- README.txt
 |-- saski.py (run file)
-|
+
 
 
 
