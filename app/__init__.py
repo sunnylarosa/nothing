@@ -9,9 +9,9 @@ import config
 def create_app(config_filename=config):
     app = Flask(__name__)
 
+    # Calling up configuration based on application environment
     if app.config["ENV"] == "production":
         app.config.from_object(config_filename.ProductionConfig)
-        
     elif app.config["ENV"] == "development":
         app.config.from_object(config_filename.DevelopmentConfig)
 
